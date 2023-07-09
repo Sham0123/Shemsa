@@ -1,0 +1,20 @@
+{% extends 'base4.html.twig' %}
+
+{% block title %}New Availability{% endblock %}
+
+{% block body %}
+<main class="relative h-full max-h-screen transition-all duration-200 ease-in-out xl:ml-68 rounded-xl">
+<div class="w-4/5 m-auto pt-10">
+
+     <h2 class="text-6xl text-center pb-12">
+           Response towards Student Request
+           </h2>
+ <div class="text-6xl text-center pb-9">
+    <a href="{{ path('app_availability_index') }}"class="bg-gradient-to-tl from-emerald-500 to-teal-400 px-2.5 text-xs rounded-1.8 py-1.4 inline-block whitespace-nowrap text-center align-baseline font-bold uppercase leading-none text-white">back to list</a>
+    
+     </div> 
+       {{ include('availability/_form.html.twig') }} 
+</div>
+</main>
+{% endblock %}
+
